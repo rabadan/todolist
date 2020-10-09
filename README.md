@@ -1,24 +1,26 @@
-# README
+# Приложение "TODO list"
+#### Приложение, в котором можно спланировать дела
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Проект реализован на Ruby on Rails 6
 
-Things you may want to cover:
+#### Demo
+https://rabadan-todolist.herokuapp.com/
 
-* Ruby version
+### Установка приложения:
+```ssh
+git clone git@github.com:rabadan/todolist.git
+cd todolist
+bundle install
+yarn install --check-files
+bundle exec rake db:create
+bundle exec rake db:migrate
+```
 
-* System dependencies
 
-* Configuration
+### Запуск сервера
+```ssh
+bundle exec rails s -b 0.0.0.0 -p 3000
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Автор
+[Rabadan Akagasanov](http://rabadan.ru)
