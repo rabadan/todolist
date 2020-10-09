@@ -1,0 +1,19 @@
+<div class="block mb-2 d-flex task">
+  <div class="mr-2">
+      <%= check_box_tag 'is_closed', '1', task.is_closed, data: {
+        remote: true,
+        url: task_path(task),
+        method: :put
+      }
+      %>
+  </div>
+  <div class="flex-grow-1">
+    <%= task.text %>
+  </div>
+  <div class="time">
+    <div><%= l task.created_at, format: :long %></div>
+    <div class="remove-button">
+      <%= link_to t('.destroy'), task, method: :delete, data: { confirm: t('.remove_it') } %>
+    </div>
+  </div>
+</div>

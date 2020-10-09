@@ -1,0 +1,21 @@
+<div class="block">
+  <h1>TODO list</h1>
+  <div>
+    тестовое задание
+  </div>
+</div>
+
+<div class="block mt-3">
+  <%= render partial: 'tasks/form' %>
+</div>
+
+<h3 class="mt-3 text-center">Список незакрытых задач</h3>
+<div class="tasks">
+  <%= render @tasks %>
+</div>
+
+<h3 class="mt-3 text-center">Список закрытых задач</h3>
+<div class="tasks tasks-closed">
+  <%= render @closed_task %>
+</div>
+

@@ -1,0 +1,18 @@
+ru:
+  activerecord:
+    models:
+      task: 'Задачи'
+    attributes:
+      text: 'Текст задачи'
+      is_closed: 'Задача закрыта'
+  helpers:
+    submit:
+      task:
+        create: 'Добавить задачу'
+        update: 'Сохранить задачу'
+  task_created: "Задача добавлена"
+  tasks:
+    task:
+      destroy: "УДАЛИТЬ"
+      remove_it: "удалить?"
+  task_destroyed: "Задача удалена"

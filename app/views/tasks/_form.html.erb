@@ -1,0 +1,12 @@
+<%= simple_form_for @task  do |f| %>
+  <div class="d-flex">
+    <%= f.input :text,
+                label: false,
+                placeholder: t('activerecord.attributes.text'),
+                wrapper_html: { class: 'flex-grow-1 mr-3' },
+                input_html: { class: 'w-100' },
+                required: true
+    %>
+    <div><%= f.button :submit %></div>
+  </div>
+<% end %>
